@@ -1,0 +1,65 @@
+.sideNav {
+  background: linear-gradient(171.32deg, rgba(102, 102, 102, .04) 3.11%, rgba(102, 102, 102, .04) 5.45%, rgba(255, 255, 255, 0) 5.45%), linear-gradient(177.58deg, rgba(102, 102, 102, .04) .72%, rgba(120, 120, 120, .0354167) 3.07%, rgba(255, 255, 255, 0) 3.08%), #FAFBFD;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  padding: 1.5rem;
+
+  .title {
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin-bottom: 1.875rem;
+
+    img {
+      margin-right: .5rem;
+    }
+  }
+
+  .sideNavContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    :global(.euiSideNavItem) {
+      margin: 0px;
+    }
+
+    :global(.euiSideNavItemButton__content .euiSideNavItemButton__label) {
+      font-size: .875rem;
+      font-weight: 400;
+      line-height: 1.313rem;
+    }
+
+    .navLink {
+      align-items: center;
+      color: #343741;
+      display: flex;
+      font-size: .875rem;
+      font-weight: normal;
+      line-height: 1.313rem;
+    }
+
+    .navLink :global(.euiIcon) {
+      margin-right: .5rem;
+    }
+
+
+    .selected {
+      color: #0071C2;
+      text-decoration: underline;
+    }
+  }
+
+  .headerLogo {
+    padding: 0px;
+    
+    :global(.euiHeaderLogo__text) {
+      font-weight: bold;
+    }
+  }
+}

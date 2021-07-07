@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+
+  .headerTitle {
+    font-size: 1.688rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+}
+
+.botListContainer {
+
+  .empty {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+:global(.euiContextMenuPanel) {
+  width: 18.75rem !important;
+}

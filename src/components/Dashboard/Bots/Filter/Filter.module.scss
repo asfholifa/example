@@ -1,0 +1,81 @@
+.flexed {
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+
+  .flexed {
+    align-items: initial;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+
+  .checkbox {
+    white-space: nowrap;
+  }
+
+  .bulkPopover :global(.euiButton) {
+    background: rgba(0, 109, 228, .2);
+    border: 0px;
+  }
+
+  .bulkPopover :global(.euiButton.euiButton-isDisabled) {
+    background: rgba(171, 180, 196, .1);
+  }
+
+  .flexed:first-child {
+    flex: 1;
+  }
+
+  .flexed > div,
+  .flexed > p,
+  .flexed > .popoverContainer > div:last-child {
+    margin-left: 16px;
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .flexed > div,
+    .flexed > p,
+    .flexed > .popoverContainer > div:last-child {
+      margin-left: 0px;
+    }
+  }
+
+  .popoverContainer {
+    display: flex;
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .popoverContainer {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+
+    .flexed:last-child {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.bulkMenu {
+  width: 200px !important;
+
+  :global(.euiContextMenu__itemLayout) {
+    color: red
+  }
+}

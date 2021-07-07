@@ -1,0 +1,19 @@
+.popover {
+  display: flex;
+
+  .flexed {
+    align-items: center;
+    display: flex;
+  }
+
+  .badge {
+    margin-left: .5rem;
+    padding: 0 .25rem;
+  }
+
+  .text {
+    font-size: .75rem;
+    line-height: 1rem;
+    white-space: nowrap;
+  }
+}

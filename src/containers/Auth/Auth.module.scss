@@ -1,0 +1,35 @@
+.wrapper {
+
+  flex: 1;
+  margin-left: .938rem;
+  margin-right: .938rem;
+  margin-top: .938rem;
+
+  .container {
+    margin: auto;
+    max-width: 400px;
+  }
+  
+  :global(.euiFormControlLayoutIcons) {
+    display: none;
+  }
+
+  .callOut {
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 700px;
+    padding: .5rem;
+    transition: .5s;
+
+    :global(.euiCallOutHeader) {
+      justify-content: center;
+    }
+  }
+}
+
+.flexed {
+  align-content: center;
+  display: flex;
+}

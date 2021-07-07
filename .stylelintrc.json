@@ -1,0 +1,32 @@
+{
+  "extends": "stylelint-config-airbnb",
+  "rules": {
+    "declaration-colon-space-after": "always-single-line",
+    "declaration-colon-space-before": "never",
+    "selector-pseudo-element-colon-notation": "double",
+    "selector-pseudo-element-no-unknown": true,
+    "order/order": [
+      [
+        "custom-properties",
+        "dollar-variables",
+        {
+          "type": "at-rule",
+          "name": "extend"
+        },
+        {
+          "type": "at-rule",
+          "name": "include",
+          "hasBlock": false
+        },
+        "declarations",
+        {
+          "type": "at-rule",
+          "name": "include",
+          "hasBlock": true
+        },
+        "rules"
+      ]
+    ],
+    "order/properties-alphabetical-order": true
+  }
+}

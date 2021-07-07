@@ -1,0 +1,146 @@
+.flexed {
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+
+  .flexed {
+    flex-direction: column;
+  }
+}
+
+.botItem {
+  border-radius: 6px;
+  box-shadow: 0px 0px .8px rgba(0, 0, 0, .06), 0px 0px 2px rgba(0, 0, 0, .04), 0px 0px 5px rgba(0, 0, 0, .04), 0px 0px 17px rgba(0, 0, 0, .03);
+  margin-top: 16px;
+  padding: 16px;
+  position: relative;
+
+  .aligned {
+    align-self: center;
+    margin-right: 1rem;
+  }
+
+  .botDescription {
+    display: flex;
+    flex: 1;
+  }
+
+  .bold {
+    color: #1A1C21;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+
+    .statusCircle {
+      align-self: center;
+      background-color: #00BFB3;
+      border-radius: 50px;
+      height: .75rem;
+      margin-left: .5rem;
+      width: .75rem;
+    }
+  }
+
+  .bordered {
+    border-left: solid #D3DAE6 1px;
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .bordered {
+      border-left: 0px;
+      border-top: solid #D3DAE6 1px;
+    }
+  }
+
+  .text {
+    color: #343741;
+    font-size: .875rem;
+    line-height: 1.313rem;
+  }
+
+  .text.grey {
+    color: #69707D;
+  }
+
+  .channelsWrapper {
+    display: flex;
+    justify-content: center;
+    padding: .938rem;
+  }
+
+  .channelsContainer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 5.5rem;
+
+    .channelItem {
+      margin-left: .5rem;
+    }
+
+    :first-child.channelItem {
+      margin-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .channelsWrapper {
+      justify-content: flex-start;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .channelsContainer {
+      justify-content: flex-start;
+    }
+  }
+
+  .statisticContainer {
+    flex-direction: column;
+    padding-left: .469rem;
+    padding-right: .469rem;
+
+    .statisticInfo {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .statisticInfo .statisticText {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .statisticContainer {
+      padding-top: .938rem;
+    }
+  }
+
+  .menuButtonContainer {
+    display: flex;
+    padding: .625rem;
+    padding-right: 0px;
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .menuButtonContainer {
+      padding: 0px;
+      padding-right: .625rem;
+      padding-top: .625rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .menuPopover * {
+    height: 100%;
+  }
+}

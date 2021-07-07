@@ -1,0 +1,60 @@
+.formItem {
+  margin-bottom: 1rem;
+  margin-top: 1.188rem;
+
+  :global(.euiButton) {
+    background-color: rgba(0, 109, 228, .2);
+    border: 0px;
+  }
+
+  :global(.euiFieldText) {
+    border-radius: 5px;
+  }
+  
+  :global(.euiFormControlLayoutIcons) {
+    display: none;
+  }
+}
+
+.logoutForm {
+
+  .title {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+
+  .dangerButton {
+    background: rgba(189, 39, 30, .2);
+    border: 0px;
+  }
+}
+
+.deleteAccountForm {
+
+  .description {
+    font-size: .875rem;
+    line-height: 1.313rem;
+  }
+  
+  .deleteAccountButton {
+
+    :global(.euiButtonContent) {
+      padding: 0px;
+    }
+  }
+
+  :global(.euiFormRow) {
+    margin-top: 0px !important;
+  }
+}
+
+.callOut {
+  border-left: 0px !important;
+  margin-top: .938rem;
+  padding: .5rem !important;
+}
+
+.rule {
+  max-width: 400px;
+}

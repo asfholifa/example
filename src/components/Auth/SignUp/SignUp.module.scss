@@ -1,0 +1,64 @@
+.form {
+    
+  .forgotPasswordRow {
+    margin-top: .313rem !important;
+    text-align: start;
+  }
+
+  .formRow {
+
+    :global(.euiFormControlLayout) {
+      border-radius: 6px;
+    }
+  
+    :global(.euiFormControlLayout__childrenWrapper) {
+      border-radius: 6px;
+    }
+
+    .appendIcon {
+      background-color: transparent !important;
+      color: #BD271E;
+    }
+  }
+
+  .nameFormRow {
+    margin-top: 1.5rem !important;
+  }
+
+  .input {
+    border-radius: 6px;
+  }
+
+  .passwordInput {
+    padding-left: .875rem;
+  }
+
+  .authText {
+    border-bottom: 1.5px solid #D3DAE6;
+    font-size: 2.125rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    padding-bottom: .313rem;
+  }
+
+  .descriptionTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+
+  .description {
+    color: #69707D;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .buttonFormRow {
+    margin-top: 1.5rem !important;
+
+    .button {
+      width: 100%;
+    }
+  }
+}
+    

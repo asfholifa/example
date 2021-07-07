@@ -1,0 +1,39 @@
+.form {
+
+  .title {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+
+  .formRow {
+
+    .passwordInput {
+      padding-left: .875rem;
+    }
+
+    :global(.euiFormControlLayout) {
+      border-radius: 6px;
+    }
+  
+    :global(.euiFormControlLayout__childrenWrapper) {
+      border-radius: 6px;
+    }
+
+    .appendIcon {
+      background-color: transparent !important;
+      color: #BD271E;
+    }
+  }
+
+  .instructions {
+    color: #8A6A0A;
+    font-size: .875rem;
+    line-height: 1.313rem;
+  }
+
+  .description {
+    font-size: .875rem;
+    line-height: 1.313rem;
+  }
+}
